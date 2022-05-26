@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Your sneakers classifier</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
+		<link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js" crossorigin="anonymous"></script>
+		<script type="application/vnd.jupyter.widget-state+json">
+		{
+			"version_major": 2,
+			"version_minor": 0,
+			"state": {}
+		}
+		</script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+		<link href="css/styles1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Background Video-->
+        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/nike_walking_video.mp4" type="video/mp4" /></video>
+        <!-- Masthead-->
+        <div class="masthead">
+            <div class="masthead-content text-white">
+                <div class="container-fluid px-4 px-lg-0">
+                    <h1 class="fst-italic lh-1 mb-4">Your sneakers classifier</h1>
+                    <p class="mb-5">Upload a photo of your sneakers.
+					<br>We will identify it for you!</p>
+					<form id="upload-file" method="post" enctype="multipart/form-data">
+						<label for="imageUpload" class="btn btn-primary">
+						Upload...
+						</label>
+					  <input type="file" class="btn btn-primary" id="imageUpload" name="file" accept=".png, .jpg, .jpeg" />					  
+					</form>
+					
+					 <!-- <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Upload...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>-->
+	
+	
+					<div class="image-section" style="display:none;">
+						<div class="img-preview">
+							<div id="imagePreview">
+							</div>
+						</div>
+						<div>
+							<button type="button" id="btn-predict">Predict!</button>
+						</div>
+					</div>
+
+				<div class="loader" style="display:none;"></div>
+
+				<h3 id="result">
+					<span> </span>
+				</h3>
+                </div>
+            </div>
+        </div>
+    </body>
+	
+	<footer>
+    <script src="js/scripts.js" type="text/javascript"></script>    
+	</footer>
+</html>
+
+<html><head>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js" crossorigin="anonymous"></script>
+<script type="application/vnd.jupyter.widget-state+json">
+{
+    "version_major": 2,
+    "version_minor": 0,
+    "state": {}
+}
+</script>
+</head>
+<body>
+
+
+</body>
+</html>
